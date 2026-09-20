@@ -4,7 +4,7 @@ soalanUtama: "Berapa sebenarnya kos haji, berapa yang saya perlu ada dalam akaun
 penerangan: "Kos haji penuh, baki minimum RM15,000, julat harga pakej PJH, dan senarai perkara yang biasanya tidak termasuk dalam harga yang diiklankan."
 hab: "Kos dan kewangan"
 entiti: ["Kos Haji", "Tabung Haji", "Muassasah", "PJH", "Bantuan Haji"]
-berkaitan: ["tabung-haji-atau-pjh", "giliran-menunggu", "pjh"]
+berkaitan: ["tabung-istitoah", "tabung-haji-atau-pjh", "giliran-menunggu"]
 dikemaskini: 2026-09-20
 penulis: asri
 draf: false

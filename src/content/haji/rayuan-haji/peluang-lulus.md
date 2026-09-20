@@ -4,7 +4,7 @@ soalanUtama: "Daripada lima kriteria rayuan, mana yang saya masih boleh ubah, da
 penerangan: "Pecahan lima kriteria pemilihan rayuan haji, mana yang tetap dan mana yang boleh digerakkan, serta apa yang patut dibuat mengikut jangka masa."
 hab: "Rayuan dan tawaran"
 entiti: ["Rayuan Haji", "Tabung Haji", "Kursus Asas Haji", "THiJARI"]
-berkaitan: ["rayuan-haji", "kursus-asas-haji", "kos-haji"]
+berkaitan: ["rayuan-haji", "tabung-istitoah", "kos-haji"]
 dikemaskini: 2026-09-20
 penulis: asri
 draf: false
