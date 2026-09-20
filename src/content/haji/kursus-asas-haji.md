@@ -4,7 +4,7 @@ soalanUtama: "Adakah Kursus Asas Haji sekadar kelas ibadah, atau ia betul-betul 
 penerangan: "Kursus Asas Haji bagi jemaah 2027 bermula 25 September 2026. Penyertaan kursus adalah salah satu kriteria yang Tabung Haji nilai semasa memilih pemohon rayuan."
 hab: "Kursus dan ilmu"
 entiti: ["Kursus Asas Haji", "Tabung Haji", "Rayuan Haji", "THiJARI"]
-berkaitan: ["tabung-haji-atau-pjh", "rayuan-haji"]
+berkaitan: ["tabung-haji-atau-pjh", "rayuan-haji", "kos-haji"]
 dikemaskini: 2026-09-20
 penulis: asri
 draf: false

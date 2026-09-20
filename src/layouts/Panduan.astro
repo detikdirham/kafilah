@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
 import Base from './Base.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import PautanBerkaitan from '../components/PautanBerkaitan.astro';
@@ -12,6 +13,20 @@ const d = entri.data;
 const p = penulisData.asri;
 const namaBahagian = { haji: 'Haji', umrah: 'Umrah', pelancongan: 'Pelancongan' }[bahagian];
 const tarikh = d.dikemaskini.toLocaleDateString('ms-MY', { day: 'numeric', month: 'long', year: 'numeric' });
+
+// Jejak roti mengikut sarang sebenar. Halaman seperti
+// rayuan-haji/peluang-lulus perlu menunjukkan induknya.
+const semua = await getCollection(bahagian);
+const segmen = entri.id.split('/');
+const jejak = [
+  { nama: 'Laman utama', url: '/' },
+  { nama: namaBahagian, url: `/${bahagian}/` },
+];
+for (let i = 0; i < segmen.length; i++) {
+  const id = segmen.slice(0, i + 1).join('/');
+  const induk = semua.find((e) => e.id === id);
+  if (induk) jejak.push({ nama: induk.data.tajuk, url: `/${bahagian}/${id}/` });
+}
 ---
 <Base
   tajuk={d.tajuk}
@@ -20,13 +35,7 @@ const tarikh = d.dikemaskini.toLocaleDateString('ms-MY', { day: 'numeric', month
   dikemaskini={d.dikemaskini}
   namaPenulis={p.nama}
 >
-  <Breadcrumb
-    jejak={[
-      { nama: 'Laman utama', url: '/' },
-      { nama: namaBahagian, url: `/${bahagian}/` },
-      { nama: d.tajuk, url: `/${bahagian}/${entri.id}/` },
-    ]}
-  />
+  <Breadcrumb jejak={jejak} />
   <article>
     <h1>{d.tajuk}</h1>
     <p class="soalan">{d.soalanUtama}</p>

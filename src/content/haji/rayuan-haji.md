@@ -4,7 +4,7 @@ soalanUtama: "Bagaimana rayuan haji dinilai, dan apa yang saya boleh buat sekara
 penerangan: "Rayuan haji dinilai atas lima kriteria, dan ada kategori keutamaan untuk teman jemaah warga emas. Panduan tentang apa yang anda boleh kawal sebelum tetingkap rayuan dibuka."
 hab: "Rayuan dan tawaran"
 entiti: ["Rayuan Haji", "Tabung Haji", "THiJARI", "Mahram", "Kursus Asas Haji"]
-berkaitan: ["kursus-asas-haji", "tabung-haji-atau-pjh", "haji-warga-emas"]
+berkaitan: ["rayuan-haji/peluang-lulus", "kursus-asas-haji", "tabung-haji-atau-pjh"]
 dikemaskini: 2026-09-20
 penulis: asri
 draf: false
