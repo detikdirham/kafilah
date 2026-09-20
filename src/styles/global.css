@@ -127,8 +127,13 @@ th, td { text-align: left; padding: var(--r2); border-bottom: 1px solid var(--se
 th { font-weight: 700; }
 
 /* --- Jejak roti ----------------------------------------------- */
-.jejak { font-family: var(--huruf-ui); font-size: .9rem; color: var(--dakwat-lembut); margin-bottom: var(--r4); }
-.jejak a { min-height: 44px; display: inline-flex; align-items: center; }
+.jejak {
+  font-family: var(--huruf-ui); font-size: .9rem; color: var(--dakwat-lembut);
+  margin-bottom: var(--r4);
+  /* Semua anak jadi kotak yang sama supaya baseline sejajar */
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0 .35rem;
+}
+.jejak a, .jejak span { display: inline-flex; align-items: center; min-height: 44px; }
 .jejak span[aria-current] { color: var(--dakwat-lembut); }
 
 /* --- Senarai hab ---------------------------------------------- */
@@ -257,7 +262,7 @@ th { font-weight: 700; }
 .jalur-dalam .kad { background: var(--kertas); }
 .jalur .kad { background: var(--kertas-dalam); }
 .jalur-dalam .cta, .jalur .cta { background: var(--kertas); }
-.hero .jejak { justify-content: center; display: flex; flex-wrap: wrap; gap: .25rem; }
+.hero .jejak { justify-content: center; }
 
 /* ============================================================
    JALUR JENAMA
