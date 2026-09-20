@@ -86,6 +86,6 @@ Kalau ibu bapa anda baru selesai pembedahan, atau mobiliti mereka sedang merosot
 
 Haji ialah kewajipan bagi yang berkemampuan, dan kemampuan itu termasuk kemampuan fizikal. Menghantar orang tua yang belum bersedia bukan ketaatan, dan ia boleh berakhir dengan cara yang tiada siapa mahu.
 
-Umrah lebih pendek, lebih ringan, dan boleh jadi ujian yang baik. Ramai keluarga bawa ibu bapa umrah dahulu, lihat bagaimana mereka menghadapinya, kemudian baru rancang haji dengan lebih yakin.
+Umrah lebih pendek, lebih ringan, dan boleh jadi ujian yang baik. Kalau itu jalan yang anda pilih, mulakan dengan [vaksin umrah](/umrah/vaksin-umrah/), kerana itu satu-satunya bahagian yang ada tarikh akhir keras. Ramai keluarga bawa ibu bapa umrah dahulu, lihat bagaimana mereka menghadapinya, kemudian baru rancang haji dengan lebih yakin.
 
 Itu bukan menangguhkan. Itu merancang.

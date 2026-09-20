@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import CtaWhatsapp from '../../components/CtaWhatsapp.astro';
+
+const entri = (await getCollection('umrah', ({ data }) => !data.draf))
+  .sort((a, b) => a.data.tajuk.localeCompare(b.data.tajuk, 'ms'));
+const hab = [...new Set(entri.map((e) => e.data.hab))].sort();
+---
+<Base
+  penuh
+  tajuk="Panduan Umrah Malaysia: Vaksin, Kos, Syarat dan Visa"
+  penerangan="Panduan umrah untuk bakal pesara, pesara dan keluarga: vaksin dan kesihatan, kos sebenar, syarat dan visa terkini."
+>
+  <section class="hero hero-jenama">
+    <div class="tapak">
+      <Breadcrumb jejak={[{ nama: 'Laman utama', url: '/' }, { nama: 'Umrah', url: '/umrah/' }]} />
+      <h1>Panduan Umrah Malaysia</h1>
+      <p class="hero-sub">
+        Umrah tidak perlu menunggu giliran. Yang perlu disediakan ialah
+        kesihatan, dokumen dan bajet, dan tiga-tiga itu lebih mudah kalau
+        dirancang awal.
+      </p>
+      <p class="hero-nota">
+        Ditulis dengan sudut pandang pesara dan keluarga yang membawa ibu bapa.
+      </p>
+    </div>
+  </section>
+
+  {hab.map((h, i) => (
+    <section class={i % 2 === 0 ? 'jalur jalur-dalam' : 'jalur'}>
+      <div class="tapak">
+        <div class="seksyen-tajuk"><h2>{h}</h2></div>
+        <ul class="kad-grid">
+          {entri.filter((e) => e.data.hab === h).map((e) => (
+            <li>
+              <a class="kad" href={`/umrah/${e.id}/`}>
+                <span class="kad-tajuk">{e.data.tajuk}</span>
+                <span class="kad-soalan">{e.data.soalanUtama}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  ))}
+
+  <section class="jalur">
+    <div class="tapak">
+      <CtaWhatsapp mesej="Salam, saya ada soalan tentang umrah." />
+    </div>
+  </section>
+</Base>

@@ -3,7 +3,11 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import CtaWhatsapp from '../components/CtaWhatsapp.astro';
 
-const panduan = (await getCollection('haji', ({ data }) => !data.draf))
+const haji = (await getCollection('haji', ({ data }) => !data.draf))
+  .map((e) => ({ ...e, bahagian: 'haji' }));
+const umrah = (await getCollection('umrah', ({ data }) => !data.draf))
+  .map((e) => ({ ...e, bahagian: 'umrah' }));
+const panduan = [...haji, ...umrah]
   .sort((a, b) => a.data.tajuk.localeCompare(b.data.tajuk, 'ms'));
 ---
 <Base
@@ -61,7 +65,7 @@ const panduan = (await getCollection('haji', ({ data }) => !data.draf))
       <ul class="kad-grid">
         {panduan.map((e) => (
           <li>
-            <a class="kad" href={`/haji/${e.id}/`}>
+            <a class="kad" href={`/${e.bahagian}/${e.id}/`}>
               <span class="kad-hab">{e.data.hab}</span>
               <span class="kad-tajuk">{e.data.tajuk}</span>
               <span class="kad-soalan">{e.data.soalanUtama}</span>
