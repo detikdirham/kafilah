@@ -1,0 +1,21 @@
+---
+import data from '../data/penulis.json';
+const p = data.asri;
+const s = data.syarikat;
+---
+<footer class="kaki">
+  <div class="tapak">
+    <p>
+      Kafilah ditulis oleh <strong>{p.nama}</strong> (ID Ejen {p.idEjen}),
+      Pegawai Pemasaran berdaftar <strong>{s.nama}</strong>
+      &middot; {s.pendaftaran} &middot; {s.lesenKpk} &middot; Lesen PJH {s.lesenPjh}.
+      <a href={p.urlSemakan} rel="nofollow noopener" target="_blank">Semak status ejen</a>.
+    </p>
+    <p>
+      Kandungan di laman ini adalah panduan am, bukan tawaran pakej.
+      Harga, tarikh dan tempahan disahkan oleh ibu pejabat Andalusia.
+      Bayaran dibuat ke akaun syarikat sahaja.
+    </p>
+    <p class="nota">No Siri Kelulusan Iklan {s.siriIklan}</p>
+  </div>
+</footer>

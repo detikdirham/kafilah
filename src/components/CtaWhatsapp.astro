@@ -1,0 +1,20 @@
+---
+import data from '../data/penulis.json';
+interface Props { mesej?: string }
+const { mesej = 'Salam, saya jumpa Kafilah dan ada soalan tentang haji.' } = Astro.props;
+const p = data.asri;
+const pautan = `https://wa.me/${p.telefonAntarabangsa}?text=${encodeURIComponent(mesej)}`;
+---
+<aside class="cta">
+  <p>
+    Ada soalan yang panduan ini tidak jawab? Tanya terus, percuma, dan saya
+    akan cakap terus terang kalau jawapannya bukan pakej kami.
+  </p>
+  <a class="butang" href={pautan} rel="nofollow noopener" target="_blank">Tanya melalui WhatsApp</a>
+  <p class="janji">
+    <strong>Janji saya:</strong> nombor anda tidak masuk mana-mana senarai,
+    dan saya tidak akan follow up berulang kali. Anda tanya, saya jawab.
+    Kalau anda senyap selepas itu, saya senyap juga.
+  </p>
+  <p class="nota">{p.nama} &middot; ID Ejen {p.idEjen} &middot; {p.telefon}</p>
+</aside>

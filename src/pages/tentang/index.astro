@@ -1,0 +1,110 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import SahkanEjen from '../../components/SahkanEjen.astro';
+import CtaWhatsapp from '../../components/CtaWhatsapp.astro';
+import data from '../../data/penulis.json';
+const p = data.asri;
+---
+<Base
+  tajuk="Tentang Kafilah dan siapa yang menulisnya"
+  penerangan="Kafilah ditulis oleh Mohamad Asri bin Ahmad, Pegawai Pemasaran berdaftar Andalusia Travel & Tours Sdn Bhd. Status ejen boleh disahkan terus di sistem Andalusia."
+>
+  <Breadcrumb jejak={[{ nama: 'Laman utama', url: '/' }, { nama: 'Tentang', url: '/tentang/' }]} />
+  <h1>Tentang Kafilah</h1>
+  <p class="soalan">Siapa yang menulis laman ini, dan kenapa anda patut atau tidak patut percaya.</p>
+  <div class="prosa">
+    <p>
+      Saya menulis di sini sebagai <strong>Abu Yusuf</strong>. Nama penuh saya
+      <strong>{p.nama}</strong>, dan saya dari {p.kawasan}.
+    </p>
+
+    <h2>Kenapa Abu Yusuf</h2>
+    <p>
+      Dalam tradisi Arab dan Islam, seseorang dikenali dengan kunya, iaitu
+      panggilan &ldquo;Abu&rdquo; atau &ldquo;Umm&rdquo; diikuti nama anaknya.
+    </p>
+    <p>
+      Ramai sahabat Nabi &#xFDFA; lebih dikenali dengan kunya mereka berbanding nama
+      sebenar. Abu Bakar as-Siddiq, nama sebenarnya Abdullah bin Abi Quhafah.
+      Abu Hurairah, yang meriwayatkan ribuan hadis, juga lebih dikenali dengan
+      kunyanya.
+    </p>
+    <p>
+      Panggilan ini bukan gelaran kebesaran. Ia panggilan yang mesra. Dalam satu
+      riwayat dalam Sahih al-Bukhari dan Sahih Muslim, Nabi &#xFDFA; menyapa seorang
+      kanak-kanak, adik kepada Anas bin Malik, dengan kunyanya
+      &ldquo;Abu Umair&rdquo;, ketika bertanya khabar tentang burung kecil
+      peliharaannya yang telah mati. Seorang kanak-kanak, disapa dengan lembut
+      dan penuh hormat.
+    </p>
+    <p>
+      Saya tidak sekali-kali hendak menyamakan diri dengan sesiapa dalam kisah
+      itu. Saya cuma mengambil ibrah daripada cara yang sudah lama ada:
+      memanggil seseorang dengan nama anaknya ialah panggilan yang hangat,
+      bukan yang formal.
+    </p>
+    <p>
+      Anak saya bernama Yusuf. Jadi saya Abu Yusuf.
+    </p>
+    <p>
+      Saya guna kunya kerana itu cara orang memanggil saya, bukan untuk
+      menyembunyikan apa-apa. Nama penuh, nombor ID ejen dan butiran lesen ada
+      di bawah halaman ini dan di kaki setiap halaman, dan status saya boleh
+      disahkan terus di sistem Andalusia.
+    </p>
+
+    <h2>Apa yang saya buat</h2>
+    <p>
+      Saya Pegawai Pemasaran berdaftar dengan Andalusia Travel &amp; Tours Sdn Bhd,
+      sebuah agensi pelancongan berlesen yang juga merupakan Pengelola Jemaah
+      Haji yang dilantik Tabung Haji.
+    </p>
+    <h2>Kenapa laman ini wujud</h2>
+    <p>
+      Kebanyakan maklumat haji dan umrah dalam Bahasa Melayu di internet ada dua
+      bentuk. Sama ada pengumuman rasmi yang tepat tetapi sukar difahami, atau
+      iklan pakej yang mudah difahami tetapi tidak memberitahu anda apa yang
+      anda sebenarnya perlu tahu.
+    </p>
+    <p>
+      Yang hilang di tengah ialah penjelasan jujur tentang keputusan. Berapa
+      sebenarnya kosnya. Apa yang tidak termasuk. Bila lebih baik anda tidak pergi
+      tahun ini. Itu ruang yang laman ini cuba isi.
+    </p>
+    <h2>Saya tahu apa yang terlintas bila dengar perkataan "ejen"</h2>
+    <p>
+      Dalam masyarakat kita, perkataan itu datang dengan bagasi. Ejen insurans
+      yang telefon waktu makan malam. Ejen unit trust yang menyapa di majlis
+      kahwin. Ejen umrah yang hilang selepas duit masuk.
+    </p>
+    <p>
+      Saya faham, sebab saya rasa benda yang sama bila nombor tak dikenali
+      masuk dalam telefon saya.
+    </p>
+    <p>
+      Jadi begini cara saya bekerja. Saya tulis dahulu, panjang dan terperinci,
+      dan saya letak semuanya di sini tanpa bayaran dan tanpa borang. Kalau apa
+      yang saya tulis berguna, dan kalau anda rasa mahu bercakap, barulah anda
+      hubungi saya. Saya tidak akan telefon anda dahulu.
+    </p>
+    <p>
+      Dan kalau anda WhatsApp saya, nombor anda tidak akan masuk mana-mana
+      senarai, dan saya tidak akan follow up berulang kali. Anda tanya, saya
+      jawab. Kalau anda senyap selepas itu, saya senyap juga.
+    </p>
+    <h2>Kepentingan saya, dinyatakan terus</h2>
+    <p>
+      Saya ejen. Kalau anda akhirnya menempah melalui saya, saya dapat komisen.
+      Anda patut tahu itu sebelum membaca apa-apa lagi di sini, dan menilai setiap
+      ayat saya dengan fakta itu di tangan.
+    </p>
+    <p>
+      Apa yang saya janjikan sebagai balasan: saya tidak akan tulis sesuatu yang
+      saya tahu tidak benar untuk menutup jualan, dan saya akan sebut kelemahan
+      pakej kami di tempat yang ia relevan.
+    </p>
+  </div>
+  <SahkanEjen />
+  <CtaWhatsapp mesej="Salam, saya baca laman Kafilah dan ada soalan." />
+</Base>

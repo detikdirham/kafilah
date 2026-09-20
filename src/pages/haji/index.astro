@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import CtaWhatsapp from '../../components/CtaWhatsapp.astro';
+
+const entri = (await getCollection('haji', ({ data }) => !data.draf))
+  .sort((a, b) => a.data.tajuk.localeCompare(b.data.tajuk, 'ms'));
+const hab = [...new Set(entri.map((e) => e.data.hab))].sort();
+---
+<Base
+  tajuk="Panduan Haji Malaysia: Giliran, Rayuan, PJH dan Kos Sebenar"
+  penerangan="Bagaimana rakyat Malaysia pergi haji apabila giliran mencecah lebih seratus tahun. Rayuan, PJH, kos sebenar dan persediaan untuk jemaah berumur."
+>
+  <Breadcrumb jejak={[{ nama: 'Laman utama', url: '/' }, { nama: 'Haji', url: '/haji/' }]} />
+  <h1>Panduan Haji Malaysia</h1>
+  <p class="soalan">Bagaimana seorang rakyat Malaysia pergi haji, pada kos berapa, dan apa pilihan yang tinggal apabila giliran terlalu jauh.</p>
+  <div class="prosa">
+    <p>
+      Daftar haji hari ini, tahun peruntukan anda jatuh sekitar 2168. Empat juta orang
+      di hadapan anda, kuota sekitar 31,600 setahun.
+    </p>
+    <p>
+      Bagi orang berumur 60 tahun, angka itu bermakna giliran biasa bukan rancangan.
+      Halaman di bawah menerangkan pilihan yang tinggal, dan berapa kosnya, tanpa
+      menjual apa-apa kepada anda.
+    </p>
+  </div>
+  {hab.map((h) => (
+    <section class="hab">
+      <h2>{h}</h2>
+      <ul class="senarai-panduan">
+        {entri.filter((e) => e.data.hab === h).map((e) => (
+          <li>
+            <a href={`/haji/${e.id}/`}>
+              {e.data.tajuk}
+              <span class="soalan-kecil">{e.data.soalanUtama}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+  <CtaWhatsapp mesej="Salam, saya ada soalan tentang haji." />
+</Base>

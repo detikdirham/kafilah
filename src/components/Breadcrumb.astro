@@ -1,0 +1,26 @@
+---
+interface Props { jejak: { nama: string; url: string }[] }
+const { jejak } = Astro.props;
+const skema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: jejak.map((j, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: j.nama,
+    item: new URL(j.url, Astro.site).href,
+  })),
+};
+const akhir = jejak.length - 1;
+---
+<nav class="jejak" aria-label="Anda di sini">
+  {jejak.map((j, i) => (
+    <>
+      {i > 0 && <span aria-hidden="true"> / </span>}
+      {i === akhir
+        ? <span aria-current="page">{j.nama}</span>
+        : <a href={j.url}>{j.nama}</a>}
+    </>
+  ))}
+</nav>
+<script type="application/ld+json" set:html={JSON.stringify(skema)} />

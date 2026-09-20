@@ -1,0 +1,174 @@
+/* ============================================================
+   Sistem reka bentuk Kafilah
+   Dioptimumkan untuk pembaca 55 tahun ke atas, di telefon,
+   selalunya di bawah cahaya terang. Setiap nilai ada sebab.
+   ============================================================ */
+
+:root {
+  /* Warna. Kontras tinggi, kertas suam bukan putih tajam,
+     supaya kurang silau di luar rumah. */
+  --dakwat:        #1a1512;  /* teks utama */
+  --dakwat-lembut: #564e46;  /* metadata, masih lulus WCAG AA */
+  --kertas:        #fdfbf7;
+  --kertas-dalam:  #f5f0e8;  /* kotak, blockquote */
+  --sempadan:      #e3dace;
+  --aksen:         #0b5d4e;  /* pautan dan CTA. Hijau dalam, bukan terang */
+  --aksen-gelap:   #084438;
+  --fokus:         #b45309;  /* cincin fokus, kontras terhadap hijau */
+
+  /* Taip. Serif untuk prosa: lebih mudah dibaca untuk teks panjang
+     dan membezakan kita daripada laut tapak agensi bersans-serif. */
+  --huruf-baca: Georgia, 'Times New Roman', 'Noto Serif', serif;
+  --huruf-ui: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* 19px asas. Bukan 16. Ini keputusan reka bentuk paling penting
+     dalam fail ini. */
+  --saiz-asas: 1.1875rem;
+
+  /* Lebar. 38rem memberi lebih kurang 65 aksara sebaris,
+     supaya mata tidak hilang jalan pulang. */
+  --lebar-baca: 38rem;
+  --lebar-tapak: 46rem;
+
+  --r1: .5rem; --r2: .75rem; --r3: 1rem;
+  --r4: 1.5rem; --r5: 2rem; --r6: 3rem;
+  --lengkung: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --dakwat: #f0ebe4; --dakwat-lembut: #b5aca1;
+    --kertas: #16120f; --kertas-dalam: #211b16;
+    --sempadan: #3a322a;
+    --aksen: #6ecfb4; --aksen-gelap: #8fe0c8;
+    --fokus: #fbbf24;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: var(--huruf-baca);
+  font-size: var(--saiz-asas);
+  line-height: 1.7;
+  color: var(--dakwat);
+  background: var(--kertas);
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.tapak { width: 100%; max-width: var(--lebar-tapak); margin-inline: auto; padding-inline: var(--r4); }
+
+/* --- Pautan --------------------------------------------------- */
+a { color: var(--aksen); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { color: var(--aksen-gelap); text-decoration-thickness: 2px; }
+
+:focus-visible { outline: 3px solid var(--fokus); outline-offset: 3px; border-radius: 2px; }
+
+.langkau {
+  position: absolute; left: -9999px;
+  background: var(--kertas); color: var(--dakwat);
+  padding: var(--r2) var(--r3); z-index: 10;
+}
+.langkau:focus { left: var(--r3); top: var(--r3); }
+
+/* --- Kepala dan kaki ------------------------------------------ */
+.kepala { border-bottom: 1px solid var(--sempadan); padding-block: var(--r3); }
+.kepala .tapak { display: flex; flex-wrap: wrap; gap: var(--r3); align-items: baseline; justify-content: space-between; }
+.jenama { font-family: var(--huruf-ui); font-size: 1.3rem; font-weight: 700; letter-spacing: .01em; color: var(--dakwat); text-decoration: none; }
+.jenama span { display: block; font-size: .78rem; font-weight: 400; color: var(--dakwat-lembut); letter-spacing: .02em; }
+.nav-utama { font-family: var(--huruf-ui); font-size: .95rem; display: flex; gap: var(--r4); }
+/* Sasaran sentuh 44px. Jari bukan tetikus. */
+.nav-utama a { display: inline-flex; align-items: center; min-height: 44px; }
+
+.kaki { margin-top: auto; border-top: 1px solid var(--sempadan); background: var(--kertas-dalam); padding-block: var(--r5); font-family: var(--huruf-ui); font-size: .92rem; color: var(--dakwat-lembut); }
+.kaki p + p { margin-top: var(--r2); }
+.kaki strong { color: var(--dakwat); }
+
+/* --- Kandungan utama ------------------------------------------ */
+.utama { padding-block: var(--r5) var(--r6); }
+
+h1, h2, h3 { font-family: var(--huruf-ui); line-height: 1.25; text-wrap: balance; letter-spacing: -.015em; }
+h1 { font-size: clamp(1.8rem, 1.35rem + 1.9vw, 2.55rem); margin-bottom: var(--r3); }
+h2 { font-size: clamp(1.35rem, 1.2rem + .8vw, 1.7rem); margin-top: var(--r6); margin-bottom: var(--r2); }
+h3 { font-size: 1.15rem; margin-top: var(--r5); margin-bottom: var(--r1); }
+
+.prosa { max-width: var(--lebar-baca); }
+.prosa > * + * { margin-top: var(--r4); }
+.prosa ul, .prosa ol { padding-left: 1.3em; }
+.prosa li + li { margin-top: var(--r1); }
+.prosa strong { font-weight: 700; }
+
+/* Soalan yang halaman ini jawab. Diangkat, bukan disorok. */
+.soalan {
+  font-family: var(--huruf-ui); font-size: 1.05rem; font-style: normal;
+  color: var(--dakwat-lembut);
+  border-left: 3px solid var(--aksen);
+  padding: var(--r2) 0 var(--r2) var(--r3);
+  margin-bottom: var(--r5);
+}
+
+blockquote { border-left: 3px solid var(--sempadan); padding-left: var(--r3); color: var(--dakwat-lembut); }
+
+table { width: 100%; border-collapse: collapse; font-family: var(--huruf-ui); font-size: .95rem; }
+th, td { text-align: left; padding: var(--r2); border-bottom: 1px solid var(--sempadan); vertical-align: top; }
+th { font-weight: 700; }
+
+/* --- Jejak roti ----------------------------------------------- */
+.jejak { font-family: var(--huruf-ui); font-size: .9rem; color: var(--dakwat-lembut); margin-bottom: var(--r4); }
+.jejak a { min-height: 44px; display: inline-flex; align-items: center; }
+.jejak span[aria-current] { color: var(--dakwat-lembut); }
+
+/* --- Senarai hab ---------------------------------------------- */
+.hab + .hab { margin-top: var(--r5); }
+.senarai-panduan { list-style: none; padding: 0; }
+.senarai-panduan li { border-bottom: 1px solid var(--sempadan); }
+.senarai-panduan a { display: block; padding-block: var(--r3); min-height: 44px; font-family: var(--huruf-ui); font-size: 1.05rem; text-decoration: none; }
+.senarai-panduan a:hover { text-decoration: underline; }
+.senarai-panduan .soalan-kecil { display: block; font-size: .9rem; color: var(--dakwat-lembut); margin-top: 2px; }
+
+/* --- CTA WhatsApp --------------------------------------------- */
+.cta { max-width: var(--lebar-baca); margin-top: var(--r6); padding: var(--r4); background: var(--kertas-dalam); border: 1px solid var(--sempadan); border-radius: var(--lengkung); font-family: var(--huruf-ui); }
+.cta p { margin-bottom: var(--r3); }
+.butang { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: var(--r2) var(--r4); background: var(--aksen); color: var(--kertas); font-weight: 600; text-decoration: none; border-radius: var(--lengkung); }
+.butang:hover { background: var(--aksen-gelap); color: var(--kertas); text-decoration: none; }
+
+/* --- Metadata -------------------------------------------------- */
+.meta { font-family: var(--huruf-ui); font-size: .88rem; color: var(--dakwat-lembut); margin-top: var(--r5); padding-top: var(--r3); border-top: 1px solid var(--sempadan); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+
+/* --- Blok pengesahan ejen ------------------------------------- */
+.sahkan { max-width: var(--lebar-baca); margin-top: var(--r6); padding: var(--r4); border: 2px solid var(--aksen); border-radius: var(--lengkung); font-family: var(--huruf-ui); }
+.sahkan h2 { margin-top: 0; font-size: 1.25rem; }
+.sahkan > p { margin-top: var(--r3); font-size: .98rem; }
+.butir { margin: var(--r4) 0; font-size: .95rem; }
+.butir > div { display: flex; gap: var(--r3); padding-block: var(--r2); border-bottom: 1px solid var(--sempadan); }
+.butir dt { flex: 0 0 9.5rem; color: var(--dakwat-lembut); }
+.butir dd { margin: 0; font-weight: 600; }
+.nota { font-size: .86rem; color: var(--dakwat-lembut); }
+
+/* Jadual dalam prosa: boleh skrol mendatar di telefon */
+.prosa table { display: block; overflow-x: auto; white-space: nowrap; }
+@media (min-width: 40rem) { .prosa table { display: table; white-space: normal; } }
+
+/* Blockquote dalam prosa: kotak amaran, bukan petikan hiasan */
+.prosa blockquote { background: var(--kertas-dalam); border-left: 4px solid var(--fokus); padding: var(--r3); border-radius: 0 var(--lengkung) var(--lengkung) 0; font-family: var(--huruf-ui); font-size: .95rem; color: var(--dakwat); }
+.prosa blockquote > * + * { margin-top: var(--r2); }
+
+/* Senarai bernombor dalam prosa lebih lega */
+.prosa ol > li { padding-left: .2em; }
+
+/* Janji dalam CTA: diangkat, bukan dibisikkan */
+.cta .janji { margin-top: var(--r3); padding-top: var(--r3); border-top: 1px solid var(--sempadan); font-size: .92rem; color: var(--dakwat); }
+.cta .janji strong { color: var(--aksen); }
+
+/* Pautan tenang ke halaman Tentang di laman utama */
+.siapa { max-width: var(--lebar-baca); margin-top: var(--r6); padding-top: var(--r4); border-top: 1px solid var(--sempadan); font-family: var(--huruf-ui); font-size: .95rem; color: var(--dakwat-lembut); }

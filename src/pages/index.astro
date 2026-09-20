@@ -1,0 +1,61 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const terkini = (await getCollection('haji', ({ data }) => !data.draf))
+  .sort((a, b) => b.data.dikemaskini.getTime() - a.data.dikemaskini.getTime())
+  .slice(0, 5);
+---
+<Base
+  tajuk="Kafilah: Panduan Haji, Umrah dan Pelancongan Islamik"
+  penerangan="Panduan jujur untuk bakal pesara, pesara, dan anak dewasa yang menaja ibu bapa ke Tanah Suci. Ditulis oleh ejen berdaftar, boleh disahkan."
+>
+  <h1>Tiada siapa pergi seorang</h1>
+  <div class="prosa">
+    <p>
+      Kafilah ialah tempat saya kongsi apa yang saya tahu tentang haji, umrah dan
+      pelancongan Islamik, khusus untuk <strong>bakal pesara</strong>, pesara, dan
+      anak dewasa yang menaja ibu bapa.
+    </p>
+    <p>
+      Saya tidak jual pakej di laman ini. Saya terangkan keputusan. Kalau selepas
+      membaca anda rasa pakej kami bukan yang sesuai untuk keluarga anda, itu
+      jawapan yang baik juga.
+    </p>
+    <p>
+      Pengeluaran Akaun Sejahtera KWSP dibuka pada umur 50, dan KWSP sendiri
+      menyebutnya wang untuk perancangan pra-persaraan. Tetapi keputusannya
+      bermula lebih awal daripada itu. Ramai orang sudah memikirkan wang itu
+      nak dibuat apa sebelum sampai 50.
+    </p>
+    <p>
+      Kalau anda berada di fasa itu, laman ini ditulis untuk anda. Wang itu
+      boleh jadi haji, boleh jadi umrah sekeluarga, boleh jadi bertahan sampai
+      hujung. Selalunya bukan ketiga-tiganya sekali, dan itulah keputusan
+      sebenar yang perlu difikirkan.
+    </p>
+  </div>
+  <section class="hab">
+    <h2>Mula di sini</h2>
+    <ul class="senarai-panduan">
+      {terkini.map((e) => (
+        <li>
+          <a href={`/haji/${e.id}/`}>
+            {e.data.tajuk}
+            <span class="soalan-kecil">{e.data.soalanUtama}</span>
+          </a>
+        </li>
+      ))}
+      <li>
+        <a href="/haji/">
+          Semua panduan haji
+          <span class="soalan-kecil">Giliran menunggu, rayuan, PJH, kos dan persediaan</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <p class="siapa">
+    Siapa yang menulis ini, dan kenapa anda patut atau tidak patut percaya:
+    <a href="/tentang/">Tentang Kafilah</a>.
+  </p>
+</Base>

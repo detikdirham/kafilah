@@ -1,0 +1,15 @@
+---
+import { getCollection, render } from 'astro:content';
+import Panduan from '../../layouts/Panduan.astro';
+
+export async function getStaticPaths() {
+  const entri = await getCollection('haji', ({ data }) => !data.draf);
+  return entri.map((e) => ({ params: { slug: e.id }, props: { entri: e } }));
+}
+
+const { entri } = Astro.props;
+const { Content } = await render(entri);
+---
+<Panduan entri={entri} bahagian="haji">
+  <Content />
+</Panduan>

@@ -1,0 +1,41 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Base from './Base.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import PautanBerkaitan from '../components/PautanBerkaitan.astro';
+import CtaWhatsapp from '../components/CtaWhatsapp.astro';
+import penulisData from '../data/penulis.json';
+
+interface Props { entri: CollectionEntry<'haji'>; bahagian: 'haji' | 'umrah' | 'pelancongan' }
+const { entri, bahagian } = Astro.props;
+const d = entri.data;
+const p = penulisData.asri;
+const namaBahagian = { haji: 'Haji', umrah: 'Umrah', pelancongan: 'Pelancongan' }[bahagian];
+const tarikh = d.dikemaskini.toLocaleDateString('ms-MY', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<Base
+  tajuk={d.tajuk}
+  penerangan={d.penerangan}
+  jenis="article"
+  dikemaskini={d.dikemaskini}
+  namaPenulis={p.nama}
+>
+  <Breadcrumb
+    jejak={[
+      { nama: 'Laman utama', url: '/' },
+      { nama: namaBahagian, url: `/${bahagian}/` },
+      { nama: d.tajuk, url: `/${bahagian}/${entri.id}/` },
+    ]}
+  />
+  <article>
+    <h1>{d.tajuk}</h1>
+    <p class="soalan">{d.soalanUtama}</p>
+    <div class="prosa"><slot /></div>
+    <p class="meta">
+      Dikemas kini {tarikh} oleh <a href="/tentang/">{p.namaPena}</a>
+      ({p.nama}), {p.peranan}. ID Ejen {p.idEjen}.
+    </p>
+  </article>
+  <PautanBerkaitan slug={d.berkaitan} bahagian={bahagian} />
+  <CtaWhatsapp />
+</Base>

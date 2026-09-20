@@ -1,0 +1,30 @@
+---
+import data from '../data/penulis.json';
+const p = data.asri;
+const s = data.syarikat;
+---
+<section class="sahkan">
+  <h2>Sahkan saya sebelum anda percaya</h2>
+  <p>
+    Industri umrah dan haji Malaysia mencatat ratusan aduan penipuan setiap tahun.
+    Jangan percaya sesiapa, termasuk saya, tanpa semak dahulu.
+  </p>
+  <dl class="butir">
+    <div><dt>Nama</dt><dd>{p.nama}</dd></div>
+    <div><dt>ID Ejen</dt><dd>{p.idEjen}</dd></div>
+    <div><dt>Jawatan</dt><dd>Pegawai Pemasaran</dd></div>
+    <div><dt>Kawasan</dt><dd>{p.kawasan}</dd></div>
+    <div><dt>Syarikat</dt><dd>{s.nama}</dd></div>
+    <div><dt>Lesen pelancongan</dt><dd>{s.lesenKpk}</dd></div>
+    <div><dt>Lesen PJH</dt><dd>{s.lesenPjh}</dd></div>
+  </dl>
+  <p>
+    <a class="butang" href={p.urlSemakan} rel="nofollow noopener" target="_blank">
+      Semak status saya di sistem Andalusia
+    </a>
+  </p>
+  <p class="nota">
+    Pautan itu pergi terus ke sistem semakan rasmi Andalusia, bukan ke halaman saya.
+    Bayaran pakej dibuat ke akaun syarikat, tidak pernah ke akaun peribadi saya.
+  </p>
+</section>

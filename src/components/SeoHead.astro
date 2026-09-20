@@ -1,0 +1,64 @@
+---
+import data from '../data/penulis.json';
+
+interface Props {
+  tajuk: string;
+  penerangan: string;
+  jenis?: 'website' | 'article';
+  dikemaskini?: Date;
+  namaPenulis?: string;
+}
+const { tajuk, penerangan, jenis = 'website', dikemaskini } = Astro.props;
+const kanonikal = new URL(Astro.url.pathname, Astro.site).href;
+const p = data.asri;
+const s = data.syarikat;
+
+const penerbit = {
+  '@type': 'Organization',
+  name: 'Kafilah',
+  url: Astro.site?.href,
+  description: 'Panduan haji, umrah dan pelancongan Islamik untuk bakal pesara, pesara, dan anak dewasa yang menaja ibu bapa.',
+};
+
+const orang = {
+  '@type': 'Person',
+  name: p.nama,
+  alternateName: p.namaPena,
+  jobTitle: 'Pegawai Pemasaran',
+  worksFor: { '@type': 'Organization', name: s.nama, url: s.laman },
+  url: new URL('/tentang/', Astro.site).href,
+  sameAs: [p.urlSemakan, ...p.sameAs],
+};
+
+const skema: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': jenis === 'article' ? 'Article' : 'WebSite',
+  headline: tajuk,
+  description: penerangan,
+  url: kanonikal,
+  inLanguage: 'ms-MY',
+  publisher: penerbit,
+};
+if (jenis === 'article') {
+  skema.dateModified = dikemaskini?.toISOString().slice(0, 10);
+  skema.author = orang;
+}
+---
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{tajuk}</title>
+<meta name="description" content={penerangan} />
+<link rel="canonical" href={kanonikal} />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<meta property="og:title" content={tajuk} />
+<meta property="og:description" content={penerangan} />
+<meta property="og:url" content={kanonikal} />
+<meta property="og:type" content={jenis} />
+<meta property="og:locale" content="ms_MY" />
+<meta property="og:site_name" content="Kafilah" />
+<meta property="og:image" content={new URL("/og-kafilah.png", Astro.site).href} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Kafilah: panduan haji, umrah dan pelancongan Islamik" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json" set:html={JSON.stringify(skema)} />

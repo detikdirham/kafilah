@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props { slug: string[]; bahagian: 'haji' | 'umrah' | 'pelancongan' }
+const { slug, bahagian } = Astro.props;
+
+const semua = await getCollection(bahagian, ({ data }) => !data.draf);
+const berkaitan = slug
+  .map((s) => semua.find((e) => e.id === s))
+  .filter((e) => e !== undefined);
+---
+{berkaitan.length > 0 && (
+  <nav class="hab" aria-labelledby="tajuk-berkaitan">
+    <h2 id="tajuk-berkaitan">Baca seterusnya</h2>
+    <ul class="senarai-panduan">
+      {berkaitan.map((e) => (
+        <li>
+          <a href={`/${bahagian}/${e!.id}/`}>
+            {e!.data.tajuk}
+            <span class="soalan-kecil">{e!.data.soalanUtama}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+)}
