@@ -9,37 +9,46 @@ const entri = (await getCollection('haji', ({ data }) => !data.draf))
 const hab = [...new Set(entri.map((e) => e.data.hab))].sort();
 ---
 <Base
+  penuh
   tajuk="Panduan Haji Malaysia: Giliran, Rayuan, PJH dan Kos Sebenar"
   penerangan="Bagaimana rakyat Malaysia pergi haji apabila giliran mencecah lebih seratus tahun. Rayuan, PJH, kos sebenar dan persediaan untuk jemaah berumur."
 >
-  <Breadcrumb jejak={[{ nama: 'Laman utama', url: '/' }, { nama: 'Haji', url: '/haji/' }]} />
-  <h1>Panduan Haji Malaysia</h1>
-  <p class="soalan">Bagaimana seorang rakyat Malaysia pergi haji, pada kos berapa, dan apa pilihan yang tinggal apabila giliran terlalu jauh.</p>
-  <div class="prosa">
-    <p>
-      Daftar haji hari ini, tahun peruntukan anda jatuh sekitar 2168. Empat juta orang
-      di hadapan anda, kuota sekitar 31,600 setahun.
-    </p>
-    <p>
-      Bagi orang berumur 60 tahun, angka itu bermakna giliran biasa bukan rancangan.
-      Halaman di bawah menerangkan pilihan yang tinggal, dan berapa kosnya, tanpa
-      menjual apa-apa kepada anda.
-    </p>
-  </div>
-  {hab.map((h) => (
-    <section class="hab">
-      <h2>{h}</h2>
-      <ul class="senarai-panduan">
-        {entri.filter((e) => e.data.hab === h).map((e) => (
-          <li>
-            <a href={`/haji/${e.id}/`}>
-              {e.data.tajuk}
-              <span class="soalan-kecil">{e.data.soalanUtama}</span>
-            </a>
-          </li>
-        ))}
-      </ul>
+  <section class="hero hero-jenama">
+    <div class="tapak">
+      <Breadcrumb jejak={[{ nama: 'Laman utama', url: '/' }, { nama: 'Haji', url: '/haji/' }]} />
+      <h1>Panduan Haji Malaysia</h1>
+      <p class="hero-sub">
+        Daftar hari ini, tahun peruntukan anda jatuh sekitar 2168. Bagi orang
+        berumur 60 tahun, itu bermakna giliran biasa bukan rancangan.
+      </p>
+      <p class="hero-nota">
+        Halaman di bawah menerangkan pilihan yang tinggal, dan berapa kosnya,
+        tanpa menjual apa-apa kepada anda.
+      </p>
+    </div>
+  </section>
+
+  {hab.map((h, i) => (
+    <section class={i % 2 === 0 ? 'jalur jalur-dalam' : 'jalur'}>
+      <div class="tapak">
+        <div class="seksyen-tajuk"><h2>{h}</h2></div>
+        <ul class="kad-grid">
+          {entri.filter((e) => e.data.hab === h).map((e) => (
+            <li>
+              <a class="kad" href={`/haji/${e.id}/`}>
+                <span class="kad-tajuk">{e.data.tajuk}</span>
+                <span class="kad-soalan">{e.data.soalanUtama}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   ))}
-  <CtaWhatsapp mesej="Salam, saya ada soalan tentang haji." />
+
+  <section class="jalur">
+    <div class="tapak">
+      <CtaWhatsapp mesej="Salam, saya ada soalan tentang haji." />
+    </div>
+  </section>
 </Base>

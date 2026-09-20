@@ -10,13 +10,16 @@ const s = data.syarikat;
     Jangan percaya sesiapa, termasuk saya, tanpa semak dahulu.
   </p>
   <dl class="butir">
-    <div><dt>Nama</dt><dd>{p.nama}</dd></div>
+    <div><dt>Nama penuh</dt><dd>{p.nama}</dd></div>
+    <div><dt>Dikenali sebagai</dt><dd>{p.namaPena}</dd></div>
     <div><dt>ID Ejen</dt><dd>{p.idEjen}</dd></div>
     <div><dt>Jawatan</dt><dd>Pegawai Pemasaran</dd></div>
     <div><dt>Kawasan</dt><dd>{p.kawasan}</dd></div>
     <div><dt>Syarikat</dt><dd>{s.nama}</dd></div>
+    <div><dt>Pendaftaran syarikat</dt><dd>{s.pendaftaran}</dd></div>
     <div><dt>Lesen pelancongan</dt><dd>{s.lesenKpk}</dd></div>
     <div><dt>Lesen PJH</dt><dd>{s.lesenPjh}</dd></div>
+    <div><dt>Siri kelulusan iklan</dt><dd>{s.siriIklan}</dd></div>
   </dl>
   <p>
     <a class="butang" href={p.urlSemakan} rel="nofollow noopener" target="_blank">

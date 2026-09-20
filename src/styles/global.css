@@ -33,6 +33,13 @@
   --r1: .5rem; --r2: .75rem; --r3: 1rem;
   --r4: 1.5rem; --r5: 2rem; --r6: 3rem;
   --lengkung: 6px;
+
+  /* Jalur jenama. Sengaja TIDAK bertukar dalam mod gelap, supaya
+     identiti Kafilah kekal sama pada kedua-dua tetapan. */
+  --jenama-latar: #0b5d4e;
+  --jenama-latar-2: #084438;
+  --jenama-teks: #fdfbf7;
+  --jenama-teks-lembut: #a9d6c8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -172,3 +179,129 @@ th { font-weight: 700; }
 
 /* Pautan tenang ke halaman Tentang di laman utama */
 .siapa { max-width: var(--lebar-baca); margin-top: var(--r6); padding-top: var(--r4); border-top: 1px solid var(--sempadan); font-family: var(--huruf-ui); font-size: .95rem; color: var(--dakwat-lembut); }
+
+/* ============================================================
+   MUKA PEMASARAN
+   Laman utama dan halaman hab. Sans-serif, skala lebih besar,
+   jalur berselang. Muka bacaan (artikel) kekal serif dan tenang.
+   ============================================================ */
+
+/* Jalur penuh lebar dengan kandungan berpusat di dalam */
+.jalur { padding-block: var(--r6); }
+.jalur-dalam { background: var(--kertas-dalam); border-block: 1px solid var(--sempadan); }
+.jalur-gelap { background: var(--aksen-gelap); color: var(--kertas); border-block: none; }
+.jalur-gelap h2, .jalur-gelap p { color: var(--kertas); }
+.jalur > .tapak { max-width: var(--lebar-tapak); }
+
+/* --- Hero ------------------------------------------------------ */
+.hero { padding-block: var(--r6) var(--r5); text-align: center; }
+.hero h1 {
+  font-size: clamp(2.1rem, 1.4rem + 3.2vw, 3.4rem);
+  line-height: 1.12; letter-spacing: -.025em;
+  margin-inline: auto; max-width: 18ch;
+}
+.hero-sub {
+  font-family: var(--huruf-ui); font-size: clamp(1.05rem, 1rem + .4vw, 1.2rem);
+  color: var(--dakwat-lembut); line-height: 1.6;
+  margin: var(--r4) auto 0; max-width: 46ch;
+}
+.hero-nota {
+  font-family: var(--huruf-ui); font-size: .92rem; color: var(--dakwat-lembut);
+  margin: var(--r3) auto 0; max-width: 52ch;
+}
+.hero-cta { display: flex; flex-wrap: wrap; gap: var(--r3); justify-content: center; margin-top: var(--r5); }
+.butang-kedua {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: var(--r2) var(--r4);
+  border: 1.5px solid var(--sempadan); border-radius: var(--lengkung);
+  font-family: var(--huruf-ui); font-weight: 600; color: var(--dakwat); text-decoration: none;
+}
+.butang-kedua:hover { border-color: var(--aksen); color: var(--aksen); text-decoration: none; }
+.butang { font-family: var(--huruf-ui); }
+
+/* Baris kepercayaan bertanda */
+.amanah {
+  display: flex; flex-wrap: wrap; gap: var(--r2) var(--r4); justify-content: center;
+  margin-top: var(--r5); padding: 0; list-style: none;
+  font-family: var(--huruf-ui); font-size: .92rem; color: var(--dakwat-lembut);
+}
+.amanah li::before { content: "✓"; color: var(--aksen); font-weight: 700; margin-right: .4em; }
+
+/* --- Jalur angka ------------------------------------------------ */
+.angka-tajuk { font-family: var(--huruf-ui); font-size: .95rem; text-align: center; color: var(--dakwat-lembut); margin-bottom: var(--r4); }
+.angka {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--r4) var(--r3);
+  text-align: center; list-style: none; padding: 0;
+}
+@media (min-width: 46rem) { .angka { grid-template-columns: repeat(4, 1fr); } }
+.angka dt { font-family: var(--huruf-ui); font-size: clamp(1.7rem, 1.3rem + 1.6vw, 2.3rem); font-weight: 700; letter-spacing: -.02em; color: var(--aksen); }
+.angka dd { margin: .35rem 0 0; font-family: var(--huruf-ui); font-size: .88rem; line-height: 1.4; color: var(--dakwat-lembut); }
+
+/* --- Kad ------------------------------------------------------- */
+.kad-grid { display: grid; gap: var(--r3); list-style: none; padding: 0; margin-top: var(--r4); }
+@media (min-width: 44rem) { .kad-grid { grid-template-columns: repeat(2, 1fr); } }
+.kad {
+  display: block; height: 100%; padding: var(--r4);
+  background: var(--kertas); border: 1px solid var(--sempadan); border-radius: var(--lengkung);
+  font-family: var(--huruf-ui); text-decoration: none; color: var(--dakwat);
+}
+.kad:hover { border-color: var(--aksen); text-decoration: none; }
+.kad-hab { display: block; font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--aksen); margin-bottom: var(--r2); }
+.kad-tajuk { display: block; font-size: 1.1rem; font-weight: 700; line-height: 1.3; }
+.kad-soalan { display: block; margin-top: var(--r2); font-size: .93rem; line-height: 1.5; color: var(--dakwat-lembut); }
+
+/* Tajuk seksyen pada muka pemasaran */
+.seksyen-tajuk { text-align: center; margin-bottom: var(--r3); }
+.seksyen-tajuk h2 { margin-top: 0; font-size: clamp(1.5rem, 1.25rem + 1.1vw, 2rem); }
+.seksyen-tajuk p { font-family: var(--huruf-ui); color: var(--dakwat-lembut); margin: var(--r3) auto 0; max-width: 52ch; }
+
+/* Kad di atas jalur dalam: guna kertas supaya ia timbul */
+.jalur-dalam .kad { background: var(--kertas); }
+.jalur .kad { background: var(--kertas-dalam); }
+.jalur-dalam .cta, .jalur .cta { background: var(--kertas); }
+.hero .jejak { justify-content: center; display: flex; flex-wrap: wrap; gap: .25rem; }
+
+/* ============================================================
+   JALUR JENAMA
+   Kepala dan hero laman pemasaran membentuk satu blok hijau.
+   Warna ini tidak bertukar dalam mod gelap.
+   ============================================================ */
+
+.kepala {
+  background: var(--jenama-latar);
+  border-bottom: none;
+  padding-block: var(--r4);
+}
+.kepala .jenama { color: var(--jenama-teks); }
+.kepala .jenama span { color: var(--jenama-teks-lembut); }
+.nav-utama a { color: var(--jenama-teks); text-decoration: none; }
+.nav-utama a:hover { color: var(--jenama-teks); text-decoration: underline; text-underline-offset: 4px; }
+
+/* Hero jenama: sambungan terus dari kepala */
+.hero-jenama {
+  background: var(--jenama-latar);
+  color: var(--jenama-teks);
+  padding-block: var(--r5) var(--r6);
+  text-align: center;
+}
+.hero-jenama h1 { color: var(--jenama-teks); }
+.hero-jenama .hero-sub { color: var(--jenama-teks); opacity: .92; }
+.hero-jenama .hero-nota { color: var(--jenama-teks-lembut); }
+.hero-jenama .amanah { color: var(--jenama-teks-lembut); }
+.hero-jenama .amanah li::before { color: var(--jenama-teks-lembut); }
+.hero-jenama .jejak,
+.hero-jenama .jejak span[aria-current] { color: var(--jenama-teks-lembut); }
+.hero-jenama .jejak a { color: var(--jenama-teks); }
+
+/* Butang di atas hijau */
+.hero-jenama .butang { background: var(--jenama-teks); color: var(--jenama-latar); }
+.hero-jenama .butang:hover { background: #fff; color: var(--jenama-latar-2); }
+.hero-jenama .butang-kedua { border-color: rgba(253,251,247,.45); color: var(--jenama-teks); }
+.hero-jenama .butang-kedua:hover { border-color: var(--jenama-teks); color: var(--jenama-teks); }
+
+.hero-jenama :focus-visible { outline-color: #fbbf24; }
+
+/* Footer: satu baris utama, selebihnya sokongan */
+.kaki-utama { font-size: 1rem; color: var(--dakwat); }
+.kaki-utama a { margin-left: .35rem; }
+.kaki .nota { margin-top: var(--r3); padding-top: var(--r3); border-top: 1px solid var(--sempadan); }
