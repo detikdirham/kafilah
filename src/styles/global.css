@@ -177,8 +177,6 @@ th { font-weight: 700; }
 .cta .janji { margin-top: var(--r3); padding-top: var(--r3); border-top: 1px solid var(--sempadan); font-size: .92rem; color: var(--dakwat); }
 .cta .janji strong { color: var(--aksen); }
 
-/* Pautan tenang ke halaman Tentang di laman utama */
-.siapa { max-width: var(--lebar-baca); margin-top: var(--r6); padding-top: var(--r4); border-top: 1px solid var(--sempadan); font-family: var(--huruf-ui); font-size: .95rem; color: var(--dakwat-lembut); }
 
 /* ============================================================
    MUKA PEMASARAN
