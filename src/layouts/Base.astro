@@ -2,6 +2,8 @@
 import '../styles/global.css';
 import SeoHead from '../components/SeoHead.astro';
 import FooterLesen from '../components/FooterLesen.astro';
+import ButangTerapung from '../components/ButangTerapung.astro';
+import type { Bahagian } from '../data/mesejWa';
 
 interface Props {
   tajuk: string;
@@ -11,8 +13,10 @@ interface Props {
   namaPenulis?: string;
   /** true untuk muka pemasaran yang uruskan jalur sendiri */
   penuh?: boolean;
+  /** menentukan teks pembuka WhatsApp pada butang terapung */
+  bahagian?: Bahagian;
 }
-const { penuh = false, ...props } = Astro.props;
+const { penuh = false, bahagian, ...props } = Astro.props;
 ---
 <!doctype html>
 <html lang="ms">
@@ -33,5 +37,6 @@ const { penuh = false, ...props } = Astro.props;
       {penuh ? <slot /> : <div class="tapak"><slot /></div>}
     </main>
     <FooterLesen />
+    <ButangTerapung bahagian={bahagian} />
   </body>
 </html>

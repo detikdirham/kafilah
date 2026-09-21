@@ -1,7 +1,10 @@
 ---
 import data from '../data/penulis.json';
-interface Props { mesej?: string }
-const { mesej = 'Salam, saya jumpa Kafilah dan ada soalan tentang haji.' } = Astro.props;
+import { mesejWa, type Bahagian } from '../data/mesejWa';
+
+interface Props { bahagian?: Bahagian }
+const { bahagian } = Astro.props;
+const mesej = mesejWa(bahagian);
 const p = data.asri;
 const pautan = `https://wa.me/${p.telefonAntarabangsa}?text=${encodeURIComponent(mesej)}`;
 ---

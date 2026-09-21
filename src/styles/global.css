@@ -308,3 +308,51 @@ th { font-weight: 700; }
 .kaki-utama { font-size: 1rem; color: var(--dakwat); }
 .kaki-utama a { margin-left: .35rem; }
 .kaki .nota { margin-top: var(--r3); padding-top: var(--r3); border-top: 1px solid var(--sempadan); }
+
+/* ---------------------------------------------------------------
+   Butang terapung WhatsApp, telefon sahaja.
+
+   Tiga peraturan yang menjadikannya menolong dan bukan mengganggu:
+   1. Ia tidak wujud pada desktop. Di sana CTA dalam teks sudah cukup
+   2. Ia hanya muncul selepas 600px skrol, iaitu selepas pembaca
+      benar-benar membaca dan bukan sebaik halaman dibuka
+   3. Ia hilang apabila blok CTA atau footer masuk pandangan,
+      supaya tidak ada dua ajakan yang sama pada satu skrin
+
+   Warna guna --jenama-latar dan bukan --aksen, kerana --aksen
+   bertukar cerah dalam mod gelap dan teks putih akan hilang.
+--------------------------------------------------------------- */
+.terapung {
+  position: fixed;
+  z-index: 60;
+  right: var(--r3);
+  bottom: calc(var(--r3) + env(safe-area-inset-bottom, 0px));
+  display: inline-flex;
+  align-items: center;
+  gap: var(--r1);
+  min-height: 52px;
+  padding: 0 var(--r4) 0 var(--r3);
+  border-radius: 999px;
+  background: var(--jenama-latar);
+  color: var(--jenama-teks);
+  font-family: var(--huruf-ui);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .3);
+  opacity: 0;
+  transform: translateY(14px);
+  pointer-events: none;
+  transition: opacity .22s ease, transform .22s ease;
+}
+.terapung.nampak { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.terapung:hover, .terapung:focus-visible { background: var(--jenama-latar-2); color: var(--jenama-teks); text-decoration: none; }
+.terapung:focus-visible { outline: 3px solid #fbbf24; outline-offset: 3px; }
+.terapung svg { width: 26px; height: 26px; fill: currentColor; flex: none; }
+
+/* Desktop tidak perlukannya langsung. */
+@media (min-width: 46rem) { .terapung { display: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .terapung { transition: none; transform: none; }
+}

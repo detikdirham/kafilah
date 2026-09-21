@@ -34,6 +34,7 @@ for (let i = 0; i < segmen.length; i++) {
   jenis="article"
   dikemaskini={d.dikemaskini}
   namaPenulis={p.nama}
+  bahagian={bahagian}
 >
   <Breadcrumb jejak={jejak} />
   <article>
@@ -46,5 +47,5 @@ for (let i = 0; i < segmen.length; i++) {
     </p>
   </article>
   <PautanBerkaitan slug={d.berkaitan} bahagian={bahagian} />
-  <CtaWhatsapp />
+  <CtaWhatsapp bahagian={bahagian} />
 </Base>

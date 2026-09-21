@@ -4,7 +4,7 @@ soalanUtama: "Vaksin apa yang wajib untuk umrah, berapa lama sebelum berlepas pe
 penerangan: "Vaksin meningokokus ACWY wajib untuk masuk Arab Saudi. Bila perlu disuntik, apa itu buku kuning, dan vaksin tambahan yang biasa dinasihatkan untuk jemaah berumur."
 hab: "Kesihatan dan kesediaan"
 entiti: ["Vaksin Umrah", "Meningokokus ACWY", "Buku Kuning", "Visa Umrah", "Klinik Andalusia"]
-berkaitan: []
+berkaitan: ["syarat-dan-visa", "kos-umrah"]
 dikemaskini: 2026-09-21
 penulis: asri
 draf: false
@@ -88,5 +88,7 @@ Sudut kesihatan dan mobiliti ini saya huraikan lebih panjang dalam [haji selepas
 ## Satu nota tentang maklumat yang berubah
 
 Syarat kesihatan untuk masuk Arab Saudi boleh berubah, kadang-kadang dengan notis pendek. Apa yang tertulis di halaman ini betul pada tarikh ia dikemas kini.
+
+Syarat kemasukan yang lain saya kumpulkan dalam [syarat dan visa umrah](/umrah/syarat-dan-visa/).
 
 Sebelum anda berlepas, sahkan semula dengan agensi berlesen anda. Ini salah satu perkara yang ejen yang baik sepatutnya maklumkan kepada anda tanpa anda perlu bertanya.
