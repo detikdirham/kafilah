@@ -46,7 +46,7 @@ Sesetengah klinik keluarkan buku kuning terus selepas suntikan. Kalau anda meran
 
 Ada rangkaian klinik yang khusus mengendalikan pemeriksaan dan vaksin jemaah umrah dan haji, iaitu **Klinik Andalusia**, di Seksyen 7 Shah Alam dan di Rawang.
 
-**Pendedahan.** Klinik ini dimiliki oleh Dariswan Sdn Bhd, syarikat bersekutu kepada Andalusia Travel & Tours Sdn Bhd — agensi yang saya wakili sebagai Pegawai Pemasaran berdaftar. Jadi saya bukan pihak neutral apabila menyebutnya. Anda patut tahu itu sebelum menimbang cadangan ini.
+**Pendedahan.** Klinik ini dimiliki oleh Dariswan Sdn Bhd, syarikat bersekutu kepada Andalusia Travel & Tours Sdn Bhd, iaitu agensi yang saya wakili sebagai Pegawai Pemasaran berdaftar. Jadi saya bukan pihak neutral apabila menyebutnya. Anda patut tahu itu sebelum menimbang cadangan ini.
 
 Sebab saya tetap sebutkan: klinik yang biasa dengan jemaah umrah selalunya lebih lancar dalam hal buku kuning, dan tidak perlu diterangkan panjang apa yang anda mahu. Itu berguna terutamanya kalau tarikh anda mepet.
 
