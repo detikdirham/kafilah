@@ -3,9 +3,9 @@ tajuk: "Vaksin Umrah: Apa Yang Wajib, Bila Perlu Disuntik, dan Apa Lagi Untuk Wa
 soalanUtama: "Vaksin apa yang wajib untuk umrah, berapa lama sebelum berlepas perlu disuntik, dan adakah ibu bapa saya yang berumur perlukan lebih daripada itu?"
 penerangan: "Vaksin meningokokus ACWY wajib untuk masuk Arab Saudi. Bila perlu disuntik, apa itu buku kuning, dan vaksin tambahan yang biasa dinasihatkan untuk jemaah berumur."
 hab: "Kesihatan dan kesediaan"
-entiti: ["Vaksin Umrah", "Meningokokus ACWY", "Buku Kuning", "Visa Umrah"]
+entiti: ["Vaksin Umrah", "Meningokokus ACWY", "Buku Kuning", "Visa Umrah", "Klinik Andalusia"]
 berkaitan: []
-dikemaskini: 2026-09-20
+dikemaskini: 2026-09-21
 penulis: asri
 draf: false
 ---
@@ -41,6 +41,18 @@ Sijil ini sah untuk beberapa tahun bergantung pada jenis vaksin yang diberikan. 
 Klinik kesihatan kerajaan dan klinik swasta berdaftar kedua-duanya menawarkan vaksin ini. Yang penting ialah klinik itu boleh mengeluarkan buku kuning yang diiktiraf, jadi tanya perkara itu sebelum membuat temujanji.
 
 Sesetengah klinik keluarkan buku kuning terus selepas suntikan. Kalau anda merancang mepet dengan tarikh, itu perbezaan yang bermakna.
+
+### Satu klinik yang saya perlu dedahkan kepentingan saya padanya
+
+Ada rangkaian klinik yang khusus mengendalikan pemeriksaan dan vaksin jemaah umrah dan haji, iaitu **Klinik Andalusia**, di Seksyen 7 Shah Alam dan di Rawang.
+
+**Pendedahan.** Klinik ini dimiliki oleh Dariswan Sdn Bhd, syarikat bersekutu kepada Andalusia Travel & Tours Sdn Bhd — agensi yang saya wakili sebagai Pegawai Pemasaran berdaftar. Jadi saya bukan pihak neutral apabila menyebutnya. Anda patut tahu itu sebelum menimbang cadangan ini.
+
+Sebab saya tetap sebutkan: klinik yang biasa dengan jemaah umrah selalunya lebih lancar dalam hal buku kuning, dan tidak perlu diterangkan panjang apa yang anda mahu. Itu berguna terutamanya kalau tarikh anda mepet.
+
+Sebab anda tidak perlu terikat dengannya: vaksin meningokokus ACWY adalah vaksin yang sama di mana-mana. Klinik kesihatan kerajaan berhampiran rumah anda boleh memberikannya, selalunya lebih murah, dan buku kuningnya sama sahnya. Kalau itu lebih senang untuk anda, buat di sana.
+
+Yang penting bukan nama klinik. Yang penting ialah suntikan dibuat cukup awal dan buku kuning dikeluarkan dengan betul.
 
 ## Kos ini tidak termasuk dalam pakej
 
