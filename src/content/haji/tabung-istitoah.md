@@ -5,7 +5,7 @@ penerangan: "Tabung Haji memperkenalkan Tabung Istito'ah dan menetapkan 31 Disem
 hab: "Kos dan kewangan"
 entiti: ["Tabung Istito'ah", "Tabung Haji", "Kelayakan Giliran Haji", "Tabung Am"]
 berkaitan: ["kos-haji", "rayuan-haji/peluang-lulus", "giliran-menunggu"]
-dikemaskini: 2026-09-20
+dikemaskini: 2026-09-28
 penulis: asri
 draf: false
 ---
@@ -59,9 +59,9 @@ Kalau angka sebulan itu terlalu tinggi untuk keadaan anda sekarang, mulakan deng
 
 Ada faedah kedua yang jarang disebut.
 
-Salah satu kriteria yang Tabung Haji nilai dalam permohonan **rayuan haji** ialah **purata simpanan lima tahun** anda. Bukan baki hari ini, purata sepanjang lima tahun.
+Dua daripada kriteria yang Tabung Haji nilai dalam permohonan **rayuan haji** ialah **purata baki akaun** dan **deposit berulang yang konsisten**. Bukan baki anda hari ini, dan bukan sekadar jumlahnya.
 
-Maksudnya wang yang anda simpan sekarang untuk memenuhi syarat RM15,000 juga sedang membina purata lima tahun yang akan dinilai kalau anda memohon rayuan pada 2029 atau 2031.
+Maksudnya wang yang anda simpan sekarang untuk memenuhi syarat RM15,000 juga sedang membina rekod yang akan dinilai kalau anda memohon rayuan pada 2029 atau 2031. Dan kerana konsistensi itu sendiri dinilai, arahan simpanan tetap bulanan lebih bernilai daripada satu jumlah besar sekali.
 
 Satu tindakan, dua kesan. Dan kedua-duanya bergerak perlahan, jadi mula awal lebih bernilai daripada mula besar.
 
@@ -69,7 +69,7 @@ Satu tindakan, dua kesan. Dan kedua-duanya bergerak perlahan, jadi mula awal leb
 
 Anda sudah memenuhi syarat, jadi tarikh 2028 itu bukan kebimbangan anda.
 
-Tetapi jangan berhenti menyimpan. Purata lima tahun tetap dikira untuk rayuan, dan kos haji penuh musim 1447H ialah RM33,300, jauh melebihi baki minimum. RM15,000 itu pintu masuk, bukan garisan penamat.
+Tetapi jangan berhenti menyimpan. Purata baki tetap dikira untuk rayuan, dan kos haji penuh yang ditetapkan untuk musim 1448H/2027M ialah RM33,300, jauh melebihi baki minimum. RM15,000 itu pintu masuk, bukan garisan penamat.
 
 ## Kalau anda belum berdaftar langsung
 

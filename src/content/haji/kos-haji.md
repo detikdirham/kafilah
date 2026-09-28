@@ -5,7 +5,7 @@ penerangan: "Kos haji penuh, baki minimum RM15,000, julat harga pakej PJH, dan s
 hab: "Kos dan kewangan"
 entiti: ["Kos Haji", "Tabung Haji", "Muassasah", "PJH", "Bantuan Haji"]
 berkaitan: ["tabung-istitoah", "tabung-haji-atau-pjh", "giliran-menunggu"]
-dikemaskini: 2026-09-20
+dikemaskini: 2026-09-28
 penulis: asri
 draf: false
 ---
@@ -14,13 +14,13 @@ Soalan kos haji selalu dijawab dengan satu nombor, dan satu nombor tidak pernah 
 
 ## Tiga nombor, bukan satu
 
-**Kos penuh haji.** Ini jumlah sebenar menguruskan seorang jemaah untuk satu musim: penerbangan, penginapan, pengangkutan, makan, perubatan, kursus, dan bayaran kepada kerajaan Arab Saudi. Bagi musim 1447H, angka ini ialah **RM33,300**.
+**Kos penuh haji.** Ini jumlah sebenar menguruskan seorang jemaah untuk satu musim: penerbangan, penginapan, pengangkutan, makan, perubatan, kursus, dan bayaran kepada kerajaan Arab Saudi. Dalam kenyataan bertarikh 28 September 2026, Tabung Haji menetapkan angka ini pada **RM33,300** untuk musim 1448H/2027M.
 
 **Apa yang jemaah bayar.** Untuk pakej muassasah, Tabung Haji memberi bantuan bersasar, jadi jumlah yang keluar dari poket jemaah lebih rendah daripada kos penuh. Bantuan ini berbeza mengikut kumpulan pendapatan, dan kerajaan menanggung tambahan bagi kumpulan B40.
 
 **Harga pakej PJH.** Ini pasaran berasingan tanpa subsidi. Pakej bermula sekitar RM40,000 dan boleh mencecah melebihi RM300,000 bergantung pada jarak hotel dan bilangan orang sebilik.
 
-> **Apa yang saya tidak dapat sahkan.** Kadar bantuan terperinci mengikut kumpulan pendapatan untuk musim 1448H/2027M belum diterbitkan sepenuhnya pada tarikh halaman ini dikemas kini. Angka RM33,300 di atas ialah kos penuh musim 1447H. Semak siaran akhbar rasmi Tabung Haji untuk angka musim semasa sebelum anda membuat pengiraan.
+> **Apa yang saya tidak dapat sahkan.** Kos penuh RM33,300 untuk musim 1448H/2027M sudah disahkan Tabung Haji. Yang belum diterbitkan sepenuhnya ialah **kadar bantuan terperinci mengikut kumpulan B40, M40 dan T20** untuk musim yang sama. Satu perkara yang sudah jelas: pemohon rayuan yang terpilih membayar kos penuh RM33,300, bukan kadar bersubsidi. Semak siaran akhbar rasmi Tabung Haji sebelum anda membuat pengiraan.
 
 ## Nombor yang sebenarnya menghalang orang
 
@@ -30,7 +30,7 @@ Anda perlu mempunyai sekurang-kurangnya RM15,000 dalam akaun Tabung Haji sebelum
 
 Ini penting untuk difahami awal, kerana ia mengubah apa yang anda patut buat sekarang. Kalau baki anda RM4,000 dan anda berumur 58 tahun, matlamat terdekat anda bukan mengumpul RM33,000. Ia mencapai RM15,000 supaya anda layak ditawarkan.
 
-Dan ingat, **purata simpanan lima tahun** juga salah satu kriteria rayuan. Jadi menambah simpanan bukan sekadar memenuhi syarat, ia menguatkan permohonan anda.
+Dan ingat, **purata baki akaun** serta **deposit berulang yang konsisten** kedua-duanya kriteria rayuan. Jadi menyimpan secara berkala bukan sekadar memenuhi syarat, ia menguatkan permohonan anda.
 
 ## Kalau anda ambil laluan PJH
 

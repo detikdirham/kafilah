@@ -5,7 +5,7 @@ penerangan: "Perbandingan jujur antara pakej muassasah Tabung Haji dan Pengelola
 hab: "Sistem haji Malaysia"
 entiti: ["Tabung Haji", "Muassasah", "Pengelola Jemaah Haji", "PJH", "Kuota Haji"]
 berkaitan: ["kursus-asas-haji", "rayuan-haji", "pjh", "giliran-menunggu"]
-dikemaskini: 2026-09-20
+dikemaskini: 2026-09-28
 penulis: asri
 draf: false
 ---
@@ -36,7 +36,7 @@ Kalau tempat datang daripada TH sama ada cara, kenapa orang bayar dua kali ganda
 
 Jawapannya jarak, keselesaan, dan pengendalian.
 
-Pakej muassasah adalah pakej asas Tabung Haji. Ia disubsidi, dan kosnya jauh lebih rendah. Kos haji penuh musim 1447H ialah RM33,300. Penginapan biasanya lebih jauh dari Masjidil Haram, dan pengendalian adalah secara pukal.
+Pakej muassasah adalah pakej asas Tabung Haji. Ia disubsidi, dan kosnya jauh lebih rendah. Kos haji penuh yang ditetapkan untuk musim 1448H/2027M ialah RM33,300. Penginapan biasanya lebih jauh dari Masjidil Haram, dan pengendalian adalah secara pukal.
 
 Pakej PJH dikendalikan syarikat swasta tanpa subsidi. Bagi memberi gambaran, pakej haji Andalusia musim 1447H bermula sekitar RM45,990 untuk bilik berlima, dan naik sehingga melebihi RM100,000 untuk bilik berdua di pakej premium. Yang anda bayar itu terutamanya jarak. Hotel dalam pakej tersebut berada sekitar 50 hingga 490 meter dari dataran Masjidil Haram.
 

@@ -1,16 +1,16 @@
 ---
 tajuk: "Peluang Rayuan Haji: Apa Yang Boleh Digerakkan dan Apa Yang Tidak"
-soalanUtama: "Daripada lima kriteria rayuan, mana yang saya masih boleh ubah, dan berapa lama masa diperlukan?"
-penerangan: "Pecahan lima kriteria pemilihan rayuan haji, mana yang tetap dan mana yang boleh digerakkan, serta apa yang patut dibuat mengikut jangka masa."
+soalanUtama: "Daripada enam kriteria rayuan haji, mana yang saya masih boleh ubah, dan berapa lama masa diperlukan?"
+penerangan: "Pecahan enam kriteria pemilihan rayuan haji seperti dinyatakan Tabung Haji, mana yang tetap dan mana yang boleh digerakkan, serta apa yang patut dibuat mengikut jangka masa."
 hab: "Rayuan dan tawaran"
 entiti: ["Rayuan Haji", "Tabung Haji", "Kursus Asas Haji", "THiJARI"]
-berkaitan: ["rayuan-haji", "tabung-istitoah", "kos-haji"]
-dikemaskini: 2026-09-20
+berkaitan: ["rayuan-haji/cara-mohon", "rayuan-haji", "tabung-istitoah"]
+dikemaskini: 2026-09-28
 penulis: asri
 draf: false
 ---
 
-Tabung Haji menilai rayuan atas beberapa kriteria: purata simpanan lima tahun, tempoh pendaftaran, umur, kekerapan rayuan, dan kehadiran kursus haji.
+Dalam kenyataan bertarikh 28 September 2026, Tabung Haji menyenaraikan kriteria penilaian rayuan seperti berikut: tempoh pendaftaran haji, umur, purata baki akaun, deposit berulang yang konsisten, kekerapan rayuan terdahulu, dan kehadiran Kursus Asas Haji TH.
 
 Mari kita ambil satu per satu, dan jujur tentang mana yang masih dalam kawalan anda hari ini.
 
@@ -42,21 +42,21 @@ Ini juga bermakna **kegagalan tahun ini bukan kegagalan.** Ia deposit untuk tahu
 
 Mohon setiap tahun. Tanpa gagal. Walaupun anda rasa tiada harapan.
 
-### Purata simpanan lima tahun: paling lambat bergerak
+### Purata baki dan deposit berulang: paling lambat bergerak
 
-Perhatikan perkataan **purata** dan **lima tahun**.
+Ini dua kriteria, bukan satu, dan membezakannya penting.
 
-Bukan baki anda hari ini. Bukan baki anda pada hari permohonan. Purata sepanjang lima tahun.
+**Purata baki** ialah purata, bukan baki anda hari ini dan bukan baki anda pada hari permohonan. Tabung Haji tidak menerbitkan tempoh yang digunakan untuk mengira purata itu, jadi saya tidak akan mereka-reka angka tahun. Yang jelas daripada perkataan purata: ia bergerak perlahan.
 
-Maksudnya menyuntik wang besar sebulan sebelum memohon hampir tidak mengubah apa-apa. Purata lima tahun bergerak perlahan, dan itulah tujuannya. Ia mengukur ketekunan, bukan satu tindakan terakhir.
+**Deposit berulang yang konsisten** pula mengukur sesuatu yang berbeza sama sekali. Bukan berapa banyak yang ada, tetapi sama ada anda benar-benar memasukkan duit secara berkala.
 
-Kesimpulan praktikalnya terbalik daripada yang orang sangka: **kalau anda mahu kriteria ini membantu anda pada 2031, anda perlu mula pada 2026.** Menyimpan sedikit setiap bulan secara konsisten mengalahkan satu jumlah besar pada saat akhir.
+Gabungan dua kriteria ini membawa satu kesimpulan yang praktikal: **arahan simpanan tetap bulanan lebih bernilai daripada satu jumlah besar sekali.** Seseorang yang memasukkan sedikit setiap bulan selama tiga tahun memenuhi kedua-dua kriteria. Seseorang yang menyuntik jumlah besar sebulan sebelum memohon hampir tidak memenuhi mana-mana.
 
-Kalau anda belum mencapai baki minimum RM15,000, itu sasaran pertama anda, kerana tanpa itu anda tidak akan ditawarkan langsung.
+Kalau anda mahu bahagian ini membantu anda pada 2031, anda perlu mula pada 2026. Dan kalau anda belum mencapai baki minimum RM15,000, itu sasaran pertama anda, kerana tanpa itu anda tidak akan ditawarkan langsung.
 
 ## Kategori keutamaan, kalau ia terpakai
 
-Berasingan daripada lima kriteria di atas, ada kategori yang diberi keutamaan: mahram bagi pasangan jemaah terpilih, teman bagi jemaah warga emas, dan penjaga bagi jemaah kurang upaya.
+Berasingan daripada enam kriteria di atas, TH memberi keutamaan kepada tiga kategori: rayuan mahram, pengiring jemaah lanjut usia, dan pengiring bagi jemaah kelainan upaya (OKU) yang terpilih.
 
 Kalau keadaan keluarga anda menepati mana-mana, ia mungkin laluan yang lebih kukuh daripada rayuan biasa. Tanya Tabung Haji secara khusus. Jangan andaikan anda tidak layak.
 
@@ -64,9 +64,9 @@ Kalau keadaan keluarga anda menepati mana-mana, ia mungkin laluan yang lebih kuk
 
 **Bulan ini:** daftarkan diri untuk Kursus Asas Haji. Semak baki akaun. Kalau bawah RM15,000, tetapkan jumlah bulanan untuk sampai ke situ.
 
-**Oktober hingga November:** pantau THiJARI untuk pengumuman rayuan. Musim lepas ia dibuka 3 November, diumumkan seminggu sebelum itu. Mohon seawal yang boleh, jangan tunggu hujung tempoh.
+**Sekarang:** tetingkap rayuan 1448H dibuka **2 Oktober 2026** melalui THiJARI, dan tarikh tutup belum diumumkan. Mohon seawal yang boleh. Langkahnya saya senaraikan dalam [cara mohon rayuan haji](/haji/rayuan-haji/cara-mohon/).
 
-**Sepanjang tahun:** simpan secara konsisten, walaupun kecil. Purata lima tahun itu yang sedang anda bina.
+**Sepanjang tahun:** simpan secara konsisten, walaupun kecil. Purata baki dan rekod deposit berulang itu yang sedang anda bina.
 
 **Setiap tahun selepas ini:** mohon semula. Setiap kali.
 
@@ -74,6 +74,6 @@ Kalau keadaan keluarga anda menepati mana-mana, ia mungkin laluan yang lebih kuk
 
 Saya tidak boleh janjikan rayuan anda akan lulus, dan sesiapa yang janjikan itu sedang menipu anda. Kuota adalah kuota, dan permohonan jauh melebihi tempat yang ada.
 
-Yang saya boleh katakan: antara orang yang gagal, ramai yang meninggalkan sekurang-kurangnya satu daripada lima kriteria itu kosong sepenuhnya. Tidak pernah hadir kursus. Mohon sekali sahaja kemudian berhenti. Baki tidak disentuh selama bertahun-tahun.
+Yang saya boleh katakan: antara orang yang gagal, ramai yang meninggalkan sekurang-kurangnya satu daripada enam kriteria itu kosong sepenuhnya. Tidak pernah hadir kursus. Mohon sekali sahaja kemudian berhenti. Baki tidak disentuh selama bertahun-tahun.
 
 Itu bahagian yang ada dalam tangan anda. Uruskan bahagian itu, dan serahkan selebihnya.

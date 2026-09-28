@@ -5,7 +5,7 @@ penerangan: "Tahun peruntukan haji bagi pendaftar baharu jatuh sekitar 2168. Pen
 hab: "Sistem haji Malaysia"
 entiti: ["Tabung Haji", "Kuota Haji", "Tahun Peruntukan", "Rayuan Haji"]
 berkaitan: ["rayuan-haji", "tabung-haji-atau-pjh", "haji-warga-emas"]
-dikemaskini: 2026-09-20
+dikemaskini: 2026-09-28
 penulis: asri
 draf: false
 ---
@@ -60,7 +60,7 @@ Tiga sebab, dan semuanya praktikal.
 
 **Kedua, tempoh pendaftaran ialah salah satu kriteria rayuan.** Setiap tahun anda berdaftar menambah berat kepada permohonan rayuan anda kemudian. Orang yang mendaftar hari ini dan memohon rayuan sepuluh tahun lagi berada dalam kedudukan lebih baik daripada orang yang mendaftar dan memohon pada tahun yang sama.
 
-**Ketiga, simpanan itu milik anda.** Wang dalam akaun Tabung Haji bukan hilang. Ia simpanan, dan purata baki lima tahun juga salah satu kriteria rayuan.
+**Ketiga, simpanan itu milik anda.** Wang dalam akaun Tabung Haji bukan hilang. Ia simpanan, dan purata baki akaun juga salah satu kriteria rayuan.
 
 Jadi mendaftar bukan membeli tiket untuk 2168. Ia membuka pintu dan memulakan jam.
 
