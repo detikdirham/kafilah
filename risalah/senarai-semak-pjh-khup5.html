@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<title>Senarai Semak PJH</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 210mm; height: 297mm; }
+  body {
+    background: #fdfbf7;
+    color: #1a1512;
+    font-family: Caladea, 'Bitstream Charter', Georgia, serif;
+    padding: 9mm 11mm;
+    display: flex;
+    flex-direction: column;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .sans { font-family: Carlito, 'DejaVu Sans', sans-serif; }
+
+  /* Kepala */
+  .kepala {
+    background: #0b5d4e; color: #fdfbf7;
+    padding: 5.5mm 6mm; border-radius: 2mm;
+    display: flex; justify-content: space-between; align-items: flex-end; gap: 6mm;
+  }
+  .kepala h1 { font-family: Carlito, sans-serif; font-size: 16pt; line-height: 1.15; letter-spacing: -.01em; }
+  .kepala .jenama { font-family: Carlito, sans-serif; font-size: 9.5pt; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; opacity: .75; margin-bottom: 1.5mm; }
+  .kepala .acara { font-family: Carlito, sans-serif; font-size: 8.5pt; line-height: 1.45; text-align: right; color: #a9d6c8; white-space: nowrap; }
+  .kepala .acara strong { color: #fdfbf7; display: block; font-size: 9.5pt; }
+
+  .arahan { font-size: 10pt; line-height: 1.4; margin: 3.5mm 0 3mm; }
+  .arahan strong { color: #0b5d4e; }
+
+  /* Jadual */
+  table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  th, td { border: .35mm solid #d3c8ba; vertical-align: top; }
+  thead th {
+    font-family: Carlito, sans-serif; font-size: 8.5pt; font-weight: 700;
+    background: #efe8dd; padding: 2mm 2.5mm; text-align: left; height: 8mm;
+  }
+  thead th:first-child { width: 62mm; }
+  tbody td { height: 17.5mm; }
+  td.soalan { padding: 2mm 2.5mm; }
+  td.soalan .n { font-family: Carlito, sans-serif; font-size: 7.5pt; font-weight: 700; color: #0b5d4e; letter-spacing: .06em; }
+  td.soalan .t { font-size: 9.5pt; line-height: 1.28; margin-top: .6mm; }
+  td.soalan .h { font-size: 8pt; line-height: 1.25; color: #6b5f54; margin-top: .8mm; font-style: italic; }
+  td.isi { background: #fffefb; }
+
+  /* Kotak sahkan */
+  .sahkan { display: flex; gap: 4mm; margin-top: 3.5mm; }
+  .kotak { flex: 1; border: .5mm solid #0b5d4e; border-radius: 2mm; padding: 3mm 3.5mm; }
+  .kotak h2 { font-family: Carlito, sans-serif; font-size: 9.5pt; color: #0b5d4e; margin-bottom: 1.2mm; }
+  .kotak p { font-size: 8.5pt; line-height: 1.35; }
+
+  /* Kaki */
+  .kaki { margin-top: auto; padding-top: 3.5mm; border-top: .35mm solid #d3c8ba; display: flex; gap: 5mm; align-items: flex-start; }
+  .kaki .teks { flex: 1; font-size: 8pt; line-height: 1.4; color: #4a4038; }
+  .kaki .teks .ded { color: #1a1512; }
+  .kaki .teks .ded strong { color: #0b5d4e; }
+  .kaki .teks .sum { margin-top: 1.5mm; color: #6b5f54; }
+  .kaki .qr { text-align: center; width: 27mm; }
+  .kaki .qr img { width: 24mm; height: 24mm; display: block; margin: 0 auto; }
+  .kaki .qr span { font-family: Carlito, sans-serif; font-size: 7pt; color: #0b5d4e; display: block; margin-top: 1mm; line-height: 1.2; }
+</style>
+</head>
+<body>
+
+  <div class="kepala">
+    <div>
+      <div class="jenama">Kafilah</div>
+      <h1>Senarai Semak Sebelum<br>Anda Pilih PJH</h1>
+    </div>
+    <div class="acara">
+      <strong>KHUP5</strong>
+      9 &ndash; 11 Oktober 2026<br>
+      M&ouml;venpick KLIA, Sepang
+    </div>
+  </div>
+
+  <p class="arahan">
+    Tanya <strong>soalan yang sama</strong> di tiga kaunter. Tulis jawapan di sini.
+    Bandingkan di rumah, bukan di dalam dewan. Kalau sesuatu pakej betul hari ini,
+    ia masih betul hari Selasa.
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Soalan</th>
+        <th>PJH 1 &nbsp;______________</th>
+        <th>PJH 2 &nbsp;______________</th>
+        <th>PJH 3 &nbsp;______________</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="soalan"><div class="n">1 &middot; HOTEL</div><div class="t">Berapa <em>meter</em> hotel Makkah dari pintu Masjidil Haram?</div><div class="h">"Berdekatan" bukan jawapan</div></td>
+        <td class="isi"></td><td class="isi"></td><td class="isi"></td>
+      </tr>
+      <tr>
+        <td class="soalan"><div class="n">2 &middot; BILIK</div><div class="t">Berapa orang sebilik dalam harga itu? Berapa kalau berdua?</div></td>
+        <td class="isi"></td><td class="isi"></td><td class="isi"></td>
+      </tr>
+      <tr>
+        <td class="soalan"><div class="n">3 &middot; MALAM</div><div class="t">Berapa malam di Makkah, di Madinah, dan khemah jenis apa di Mina?</div></td>
+        <td class="isi"></td><td class="isi"></td><td class="isi"></td>
+      </tr>
+      <tr>
+        <td class="soalan"><div class="n">4 &middot; PENERBANGAN</div><div class="t">Terus atau transit? Berapa jam transit?</div></td>
+        <td class="isi"></td><td class="isi"></td><td class="isi"></td>
+      </tr>
+      <tr>
+        <td class="soalan"><div class="n">5 &middot; MUTAWWIF</div><div class="t">Nisbah mutawwif kepada jemaah? Ada petugas wanita?</div></td>
+        <td class="isi"></td><td class="isi"></td><td class="isi"></td>
+      </tr>
+      <tr>
+        <td class="soalan"><div class="n">6 &middot; TIDAK TERMASUK</div><div class="t">Apa yang <em>tidak</em> termasuk? Minta senarai bertulis.</div></td>
+        <td class="isi"></td><td class="isi"></td><td class="isi"></td>
+      </tr>
+      <tr>
+        <td class="soalan"><div class="n">7 &middot; PEMBATALAN</div><div class="t">Syarat pembatalan kalau doktor kata ibu bapa saya tidak boleh pergi?</div><div class="h">Paling kerap dilangkau</div></td>
+        <td class="isi"></td><td class="isi"></td><td class="isi"></td>
+      </tr>
+      <tr>
+        <td class="soalan"><div class="n">8 &middot; KERUSI RODA</div><div class="t">Kemudahan untuk jemaah berkerusi roda? Ada bayaran tambahan?</div><div class="h">"Nanti kami uruskan" bukan jawapan</div></td>
+        <td class="isi"></td><td class="isi"></td><td class="isi"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="sahkan">
+    <div class="kotak">
+      <h2>Sahkan ia PJH yang dilantik TH</h2>
+      <p>Lesen MOTAC dan pelantikan Pengelola Jemaah Haji adalah dua benda berlainan.
+      Untuk haji, pelantikan Tabung Haji yang menentukan. Semak senarai rasmi TH sendiri.
+      Kata Tabung Haji: <em>tiada visa, tiada haji.</em></p>
+    </div>
+    <div class="kotak">
+      <h2>Bayar ke akaun syarikat sahaja</h2>
+      <p>Tidak ke akaun peribadi sesiapa, termasuk ejen yang melayan anda di kaunter.
+      Ini bukan formaliti. Ia perlindungan tunggal yang paling berkesan yang anda ada.</p>
+    </div>
+  </div>
+
+  <div class="kaki">
+    <div class="teks">
+      <p class="ded"><strong>Pendedahan.</strong> Senarai ini disediakan oleh Abu Yusuf (Mohamad Asri bin Ahmad),
+      Pegawai Pemasaran berdaftar Andalusia Travel &amp; Tours Sdn Bhd, salah satu PJH dalam senarai TH.
+      Saya ada kepentingan, dan anda patut tahu sebelum menggunakan senarai ini.
+      Soalan di atas terpakai untuk <strong>mana-mana PJH</strong>, termasuk kami.
+      Tanya di kaunter kami dan di sekurang-kurangnya dua kaunter lain.</p>
+      <p class="sum">Kandungan ini panduan am, bukan tawaran pakej. Andalusia Travel &amp; Tours Sdn Bhd
+      107273-P &middot; KPK/LN:1050 &middot; ID Ejen 0002786 &middot; 010-3046090</p>
+    </div>
+    <div class="qr">
+      <img src="data:image/png;base64,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" alt="Kod QR ke kafilah.my">
+      <span>Versi penuh<br>kafilah.my</span>
+    </div>
+  </div>
+
+</body>
+</html>

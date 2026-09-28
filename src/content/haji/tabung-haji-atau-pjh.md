@@ -4,7 +4,7 @@ soalanUtama: "Berbaloikah membayar RM46,000 ke atas untuk pakej haji swasta, ber
 penerangan: "Perbandingan jujur antara pakej muassasah Tabung Haji dan Pengelola Jemaah Haji swasta: giliran menunggu, kos sebenar, jarak hotel, dan siapa yang benar-benar patut bayar lebih."
 hab: "Sistem haji Malaysia"
 entiti: ["Tabung Haji", "Muassasah", "Pengelola Jemaah Haji", "PJH", "Kuota Haji"]
-berkaitan: ["kursus-asas-haji", "rayuan-haji", "pjh", "giliran-menunggu"]
+berkaitan: ["karnival-haji", "pjh", "rayuan-haji", "kursus-asas-haji"]
 dikemaskini: 2026-09-28
 penulis: asri
 draf: false

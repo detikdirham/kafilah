@@ -4,8 +4,8 @@ soalanUtama: "Syarikat mana yang dilantik Tabung Haji sebagai PJH untuk musim 20
 penerangan: "Senarai penuh syarikat Pengelola Jemaah Haji yang dilantik Tabung Haji untuk musim 1448H/2027M, cara mengesahkannya sendiri, dan soalan yang patut ditanya sebelum memilih."
 hab: "Sistem haji Malaysia"
 entiti: ["Pengelola Jemaah Haji", "PJH", "Tabung Haji", "Andalusia Travel & Tours"]
-berkaitan: ["tabung-haji-atau-pjh", "rayuan-haji"]
-dikemaskini: 2026-09-20
+berkaitan: ["karnival-haji", "tabung-haji-atau-pjh", "rayuan-haji"]
+dikemaskini: 2026-09-28
 penulis: asri
 draf: false
 ---

@@ -95,4 +95,6 @@ Tetingkap dibuka 2 Oktober. Jadi senarai ini bukan lagi perancangan jangka panja
 
 **Tetapkan arahan simpanan tetap bulanan.** Bukan untuk tahun ini. Untuk kriteria deposit berulang yang akan dinilai pada rayuan anda tahun-tahun akan datang.
 
+Dan kalau anda mahu melihat laluan PJH sebagai perbandingan, semua PJH berlesen berkumpul di satu tempat pada 9 hingga 11 Oktober. Saya terangkan cara menggunakannya dengan bijak dalam [Karnival Haji KHUP5](/haji/karnival-haji/).
+
 Dan mohon setiap tahun, walaupun anda rasa tiada harapan. Kekerapan itu dikira.
